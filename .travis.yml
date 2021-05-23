@@ -1,8 +1,19 @@
 language: go
 
-install:
-  - go mod tidy 
+matrix:
+  allow_failures:
+    - go: master
+  include:
+    # Supported versions of Go: https://golang.org/dl/
+    - go: "1.15.x"
+    - go: master
+
+go_import_path: github.com/leogsilva/syntropy-go-sdk
+
+env:
+  global:
+    - GO111MODULE=on
 
 script:
-  - go build -v ./
+  - go test -v ./...
 

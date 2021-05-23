@@ -9,6 +9,6 @@
 package swagger
 
 type AnyOfAgentMessagePayload struct {
-    AutoPingPayload
-    VppCallableObject
+	AutoPingPayload
+	VppCallableObject
 }

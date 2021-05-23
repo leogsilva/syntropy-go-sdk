@@ -9,5 +9,4 @@
 package swagger
 
 type AnyOfinlineResponse204 struct {
-    PlatformResponseVoid_
 }
