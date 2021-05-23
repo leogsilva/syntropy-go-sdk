@@ -1,4 +1,4 @@
-module github.com/leogsilva/syntroy-go-sdk
+module github.com/leogsilva/syntropy-go-sdk
 
 go 1.15
 
