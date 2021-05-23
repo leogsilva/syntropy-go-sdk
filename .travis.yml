@@ -1,7 +1,7 @@
 language: go
 
 install:
-  - go get -d -v .
+  - go mod tidy 
 
 script:
   - go build -v ./
